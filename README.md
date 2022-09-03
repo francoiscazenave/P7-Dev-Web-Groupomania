@@ -18,8 +18,6 @@ Créer un fichier `.env` à la racine du répertoire back et ajouter les donnée
 
 Créer un répertoire `images` à la racine du dossier back pour pouvoir enregistrer les images provenants du Front-End.
 
-Par défaut le Back-end fonctionne sur le port TCP 4000, cela peut être modifié depuis le fichier `server.js` à la
-
 ## Mise en place du Front-End :
 
 Pour installer les dépendances, entrer dans le répertoire front et taper depuis un terminal : `npm install`
