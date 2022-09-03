@@ -1,0 +1,64 @@
+.loginSignin {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 20px 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+legend, label, input, button {
+  margin-bottom: 1.2em;
+}
+
+legend {
+  font-size: 1.5em;
+  margin-top: 1.2em;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+.form input {
+  width: 40%;
+  height: 3em;
+  padding: 0 10px;
+  border-radius: 22px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #FD2D01;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.btn__form {
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 0.5em;
+  background-color: #FFD7D7;
+  color: black;
+  border: none;
+  margin-bottom: 1.2em;
+  font-size: 1.3em;
+}
+
+.btn__form:focus {
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.errMsg {
+  font-size: 1.5em;
+  color: red;
+  margin-bottom: 1.5em;
+}
