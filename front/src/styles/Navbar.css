@@ -85,3 +85,19 @@ nav {
     right: 5px;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .logo {
+    width: 8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 6em;
+  }
+
+  .link {
+    font-size: 1em;
+  }
+}

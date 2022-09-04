@@ -36,3 +36,32 @@
   width: 40%;
   height: 10em;
 }
+
+@media screen and (max-width: 991px) {
+  .form__createPost textarea {
+    font-size: 1.2em;
+    width: 70%;
+    height: 20em;
+    margin-top: 1em;
+  }
+
+  .form__createPost input {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .createPost h1 {
+    font-size: 2em;
+  }
+
+  .form__createPost textarea {
+    font-size: 1.2em;
+    width: 95%;
+    height: 20em;
+  }
+
+  .form__createPost input {
+    width: 95%;
+  }
+}

@@ -50,3 +50,25 @@
   color: #4E5166;
   font-size: 1.3em;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 20em;
+  }
+
+  .card h2 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: .8em;
+  }
+
+  .card a {
+    font-size: .9em;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}

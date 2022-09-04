@@ -237,8 +237,6 @@ export default function Post() {
           <br />
           <label htmlFor="description">Description :</label>
           <textarea
-            cols="130"
-            rows="15"
             name="description"
             id="description"
             value={text}

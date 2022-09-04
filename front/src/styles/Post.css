@@ -95,3 +95,29 @@
   color: #1b9cfc;
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 991px) {
+  .main img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main h1 {
+    font-size: 2em;
+  }
+
+  .main p {
+    font-size: 1em;
+  }
+
+  .radio_group {
+    font-size: 1.2em;
+  }
+}

@@ -7,7 +7,6 @@ import { userSchema } from '../Utils/Validations/UserValidation'
 
 export default function Login({ setAuth }) {
   const userRef = useRef()
-  const errRef = useRef()
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -65,8 +64,12 @@ export default function Login({ setAuth }) {
     <section className="loginSignin">
       <h1 className="title">Groupomania</h1>
       <form className="form" onSubmit={handleSubmit}>
-        <legend>Entrez vos identifiants de connexion :</legend>
-        <label htmlFor="email">Adresse email :</label>
+        <legend className="legend">
+          Entrez vos identifiants de connexion :
+        </legend>
+        <label className="label" htmlFor="email">
+          Adresse email :
+        </label>
         <input
           type="text"
           name="email"
@@ -77,7 +80,9 @@ export default function Login({ setAuth }) {
           value={email}
           required
         />
-        <label htmlFor="password">Mot de passe :</label>
+        <label className="label" htmlFor="password">
+          Mot de passe :
+        </label>
         <input
           type="password"
           name="password"
@@ -87,11 +92,7 @@ export default function Login({ setAuth }) {
           placeholder="Mot de passe"
           required
         />
-        <p
-          ref={errRef}
-          className={error ? 'errMsg' : 'offscreen'}
-          aria-live="assertive"
-        >
+        <p className={error ? 'errMsg' : 'offscreen'} aria-live="assertive">
           {error}
         </p>
         <button type="submit" className="btn__form">
