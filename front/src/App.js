@@ -12,7 +12,7 @@ import Login from './pages/Login'
 import Signin from './pages/Signup'
 import Post from './pages/Post'
 import CreatePost from './pages/CreatePost'
-/* import Error from './pages/Error' */
+import Error from './pages/Error'
 import './styles/App.css'
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
           <Route path="/:id" element={<Post />} />
           <Route path="/createPost" element={<CreatePost />} />
         </Route>
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

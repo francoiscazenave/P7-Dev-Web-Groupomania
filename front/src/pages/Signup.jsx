@@ -47,7 +47,8 @@ export default function Signup() {
         .catch((error) => {
           setLoading(false)
           if (error.response.status === 401 || error.response.status === 400) {
-            setError(error.response.data.message)
+            setError(`${error.message} : 
+            Identifiant ou mot de passe incorrect`)
           } else {
             setError(
               "Quelque chose s'est mal passé. Veuillez réessayer plus tard."
@@ -56,7 +57,10 @@ export default function Signup() {
           console.log('error >>>', error)
         })
     } else {
-      setError('Il y a des erreurs dans le formulaire')
+      setLoading(false)
+      setError(
+        'Il y a des erreurs dans le formulaire (le mot de passe doit faire au minimum 5 caractères), ou le mail existe déjà'
+      )
     }
   }
 

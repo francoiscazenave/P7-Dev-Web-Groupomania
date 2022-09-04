@@ -49,13 +49,15 @@ export default function Login({ setAuth }) {
         .catch((error) => {
           setLoading(false)
           if (error.response.status === 401 || error.response.status === 400) {
-            setError(error.response.data.message)
+            setError(`${error.message} : 
+            Identifiant ou mot de passe incorrect`)
           } else {
             setError('Something went wrong. Please try again later.')
           }
           console.log('error >>>', error)
         })
     } else {
+      setLoading(false)
       setError('Il y a des erreurs dans le formulaire')
     }
   }
