@@ -40,7 +40,7 @@ function App() {
           <Route path="/:id" element={<Post />} />
           <Route path="/createPost" element={<CreatePost />} />
         </Route>
-        <Route path="*" element={<Error />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

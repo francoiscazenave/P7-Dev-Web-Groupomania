@@ -26,7 +26,7 @@ export default function Navbar({ auth, setAuth }) {
     return (
       <header>
         <img src={Logo} alt="Logo deGroupomania" className="logo" />
-        <nav ref={navRef}>
+        <nav ref={navRef} role="navigation" aria-label="Menu principal">
           <NavLink
             to="/login"
             className={({ isActive }) =>
@@ -47,8 +47,12 @@ export default function Navbar({ auth, setAuth }) {
             <FaTimes />
           </button>
         </nav>
-        <button className="nav_btn nav_menu_btn" onClick={showNavbar}>
-          <FaBars />
+        <button
+          className="nav_btn nav_menu_btn"
+          onClick={showNavbar}
+          aria-expanded="true"
+        >
+          <FaBars aria-hidden="true" focusable="false" />
         </button>
       </header>
     )
